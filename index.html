@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Friendz Fresh - Organic</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid px-5 d-none d-lg-block">
+        <div class="row gx-5 py-3 align-items-center">
+            <div class="col-lg-3">
+                <div class="d-flex align-items-center justify-content-start">
+                 <img src="data:image/png;base64,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" class="w-50" alt="">
+                      
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="d-flex align-items-center justify-content-center">
+                    <img src="img/logoo.jpg" class="w-25" alt="">
+                    <a href="index.html" class="navbar-brand ms-lg-5">
+                        <h1 class="m-0 display-4 text-primary"><span class="text-secondary">Arbaz  </span><span class="text-info">&</span>  Unaid</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="d-flex align-items-center justify-content-end">
+                    <a class="btn btn-primary btn-square rounded-circle me-2" href="https://github.com/Arbazkhna123" target="_blank"><i class="fab fa-github"></i></a>
+                    <a class="btn btn-primary btn-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-primary btn-square rounded-circle me-2" href="https://www.linkedin.com/feed/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-primary btn-square rounded-circle" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-5">
+        <h3>༺✮•°◤ 𝘼𝙜𝙧𝙞𝙘𝙪𝙡𝙩𝙪𝙧𝙚 ◥°•✮༻</h3>
+        <a href="index.html" class="navbar-brand d-flex d-lg-none">
+            <h1 class="m-0 display-4 text-secondary"><span class="text-white">Farm</span>Fresh</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto py-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="service.html" class="nav-item nav-link">Service</a>
+                <a href="product.html" class="nav-item nav-link">Product</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                    <div class="carousel-caption top-0 bottom-0 start-0 end-0 d-flex flex-column align-items-center justify-content-center">
+                        <div class="text-start p-5" style="max-width: 900px;">
+                            <h3 class="text-white">Organic Vegetables</h3>
+                            <h1 class="display-1 text-white mb-md-4">Organic Vegetables For Healthy Life</h1>
+                            <a href="" class="btn btn-primary py-md-3 px-md-5 me-3">Explore</a>
+                            <a href="contact.html" class="btn btn-secondary py-md-3 px-md-5">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <div class="carousel-caption top-0 bottom-0 start-0 end-0 d-flex flex-column align-items-center justify-content-center">
+                        <div class="text-start p-5" style="max-width: 900px;">
+                            <h3 class="text-white">Organic Fruits</h3>
+                            <h1 class="display-1 text-white mb-md-4">Organic Fruits For Better Health</h1>
+                            <a href="" class="btn btn-primary py-md-3 px-md-5 me-3">Explore</a>
+                            <a href="" class="btn btn-secondary py-md-3 px-md-5">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Banner Start -->
+    <div class="container-fluid banner mb-5">
+        <div class="container">
+            <div class="row gx-0">
+                <div class="col-md-6">
+                    <div class="bg-primary bg-vegetable d-flex flex-column justify-content-center p-5" style="height: 300px;">
+                        <h3 class="text-white mb-3">Organic Vegetables</h3>
+                        <p class="text-white">Organic vegetables refer to produce that is grown without synthetic pesticides, herbicides, or genetically modified organisms (GMOs). Instead, organic farming relies on natural methods to control pests and enhance soil fertility. Here are some key characteristics and aspects of organic vegetables:</p>
+                        <a class="text-white fw-bold" href="about.html">Read More<i class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="bg-secondary bg-fruit d-flex flex-column justify-content-center p-5" style="height: 300px;">
+                        <h3 class="text-white mb-3">Organic Fruits</h3>
+                        <p class="text-white">Organic fruits are typically certified by regulatory bodies to ensure they meet specific organic standards. Different countries may have their own certification programs for organic products</p>
+                        <a class="text-white fw-bold" href="about.html">Read More<i class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner Start -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid about pt-5">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="d-flex h-100 border border-5 border-primary border-bottom-0 pt-4">
+                        <img class="img-fluid mt-auto mx-auto" src="img/about.png">
+                    </div>
+                </div>
+                <div class="col-lg-6 pb-5">
+                    <div class="mb-3 pb-2">
+                        <h6 class="text-primary text-uppercase">About Us</h6>
+                        <h1 class="display-5">We Produce Organic Food For Your Family</h1>
+                    </div>
+                    <p class="mb-4">
+                        It appears there might be a slight confusion in your statement. If you are looking to communicate information about the organic food you produce for families, you may want to provide details about the content and characteristics of your products. Here's an example of how you might phrase it:</p>
+                    <div class="row gx-5 gy-4">
+                        <div class="col-sm-6">
+                            <i class="fa fa-seedling display-1 text-secondary"></i>
+                            <h4>100% Organic</h4>
+                            <p class="mb-0"> Savor the assurance that comes with choosing 100% organic — a choice that not only elevates your dining experience but also supports a planet-friendly approach to agriculture.</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <i class="fa fa-award display-1 text-secondary"></i>
+                            <h4>Award Winning</h4>
+                            <p class="mb-0">being informed about recalls or specific warnings issued by health and safety authorities can help ensure the integrity of organic products.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Facts Start -->
+    <div class="container-fluid bg-primary facts py-5 mb-5">
+        <div class="container py-5">
+            <div class="row gx-5 gy-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex">
+                        <div class="bg-secondary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <i class="fa fa-star fs-4 text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text-white">Our Experience</h5>
+                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">200</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex">
+                        <div class="bg-secondary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <i class="fa fa-users fs-4 text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text-white">Farm Specialist</h5>
+                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">1500</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex">
+                        <div class="bg-secondary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <i class="fa fa-check fs-4 text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text-white">Complete Project</h5>
+                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">600</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex">
+                        <div class="bg-secondary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <i class="fa fa-mug-hot fs-4 text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text-white">Happy Clients</h5>
+                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">8000</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+    
+
+    <!-- Services Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="mb-3">
+                        <h6 class="text-primary text-uppercase">Services</h6>
+                        <h1 class="display-5">Organic Farm Services</h1>
+                    </div>
+                    <p class="mb-4">Organic farm services encompass a range of offerings designed to support and enhance organic farming practices.</p>
+                    <a href="contact.html" class="btn btn-primary py-md-3 px-md-5">Contact Us</a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-light text-center p-5">
+                        <i class="fa fa-carrot display-1 text-primary mb-3"></i>
+                        <h4>Fresh Vegetables</h4>
+                        <p class="mb-0">Leafy Greens:
+
+                            Spinach
+                            Kale
+                            Lettuce
+                            Swiss chard
+                            Arugula</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-light text-center p-5">
+                        <i class="fa fa-apple-alt display-1 text-primary mb-3"></i>
+                        <h4>Fresh Fruits</h4>
+                        <p class="mb-0">Berries:
+
+                            Strawberries
+                            Blueberries
+                            Raspberries
+                            Blackberries</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-light text-center p-5">
+                        <i class="fa fa-dog display-1 text-primary mb-3"></i>
+                        <h4>Healty Cattle</h4>
+                        <p class="mb-0">The cattle based on their age, weight, and purpose (e.g., meat production, dairy).
+                            Access to clean, fresh water at all times.</div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-light text-center p-5">
+                        <i class="fa fa-tractor display-1 text-primary mb-3"></i>
+                        <h4>Modern Truck</h4>
+                        <p class="mb-0"> Advanced load management and cargo tracking systems.
+                            Integration of sensors to monitor. </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-light text-center p-5">
+                        <i class="fa fa-seedling display-1 text-primary mb-3"></i>
+                        <h4>Farming Plans</h4>
+                        <p class="mb-0"> Plan for the labor needs during different phases of the farming cycle. <br><br> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+
+    <!-- Features Start -->
+    <!-- <div class="container-fluid bg-primary feature py-5 pb-lg-0 my-5">
+        <div class="container py-5 pb-lg-0">
+            <div class="mx-auto text-center mb-3 pb-2" style="max-width: 500px;">
+                <h6 class="text-uppercase text-secondary">Features</h6>
+                <h1 class="display-5 text-white">Why Choose Us!!!</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-3">
+                    <div class="text-white mb-5">
+                        <div class="bg-secondary rounded-pill d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <i class="fa fa-seedling fs-4 text-white"></i>
+                        </div>
+                        <h4 class="text-white">100% Organic</h4>
+                        <p class="mb-0">Labore justo vero ipsum sit clita erat lorem magna clita</p>
+                    </div>
+                    <div class="text-white">
+                        <div class="bg-secondary rounded-pill d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <i class="fa fa-award fs-4 text-white"></i>
+                        </div>
+                        <h4 class="text-white">Award Winning</h4>
+                        <p class="mb-0">Labore justo vero ipsum sit clita erat lorem magna clita</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-block bg-white h-100 text-center p-5 pb-lg-0">
+                        <p>At et justo elitr amet sea at. Magna et sit vero at ipsum sit et dolores rebum. Magna sea eos sit dolor, ipsum amet no tempor ipsum eirmod lorem eirmod diam tempor dolor eos diam et et diam dolor ea. Clita est rebum amet dolore sit. Dolor stet dolor duo clita, vero dolor ipsum amet dolore magna lorem erat stet sed vero dolor</p>
+                        <img class="img-fluid" src="img/feature.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="text-white mb-5">
+                        <div class="bg-secondary rounded-pill d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <i class="fa fa-tractor fs-4 text-white"></i>
+                        </div>
+                        <h4 class="text-white">Modern Farming</h4>
+                        <p class="mb-0">Labore justo vero ipsum sit clita erat lorem magna clita</p>
+                    </div>
+                    <div class="text-white">
+                        <div class="bg-secondary rounded-pill d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <i class="fa fa-phone-alt fs-4 text-white"></i>
+                        </div>
+                        <h4 class="text-white">24/7 Support</h4>
+                        <p class="mb-0">Labore justo vero ipsum sit clita erat lorem magna clita</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Features Start -->
+
+
+    <!-- Products Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="mx-auto text-center mb-5" style="max-width: 500px;">
+                <h6 class="text-primary text-uppercase">Products</h6>
+                <h1 class="display-5">Our Fresh & Organic Products</h1>
+            </div>
+            <div class="owl-carousel product-carousel px-5">
+                <div class="pb-5">
+                    <div class="product-item position-relative bg-white d-flex flex-column text-center">
+                        <img class="img-fluid mb-4" src="img/product-1.png" alt="">
+                        <h6 class="mb-3">Organic Vegetable</h6>
+                        <h5 class="text-primary mb-0">$19.00</h5>
+                        <div class="btn-action d-flex justify-content-center">
+                            <a class="btn bg-primary py-2 px-3" href=""><i class="bi bi-cart text-white"></i></a>
+                            <a class="btn bg-secondary py-2 px-3" href=""><i class="bi bi-eye text-white"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pb-5">
+                    <div class="product-item position-relative bg-white d-flex flex-column text-center">
+                        <img class="img-fluid mb-4" src="img/product-2.png" alt="">
+                        <h6 class="mb-3">Organic Vegetable</h6>
+                        <h5 class="text-primary mb-0">$19.00</h5>
+                        <div class="btn-action d-flex justify-content-center">
+                            <a class="btn bg-primary py-2 px-3" href=""><i class="bi bi-cart text-white"></i></a>
+                            <a class="btn bg-secondary py-2 px-3" href=""><i class="bi bi-eye text-white"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pb-5">
+                    <div class="product-item position-relative bg-white d-flex flex-column text-center">
+                        <img class="img-fluid mb-4" src="img/product-1.png" alt="">
+                        <h6 class="mb-3">Organic Vegetable</h6>
+                        <h5 class="text-primary mb-0">$19.00</h5>
+                        <div class="btn-action d-flex justify-content-center">
+                            <a class="btn bg-primary py-2 px-3" href=""><i class="bi bi-cart text-white"></i></a>
+                            <a class="btn bg-secondary py-2 px-3" href=""><i class="bi bi-eye text-white"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pb-5">
+                    <div class="product-item position-relative bg-white d-flex flex-column text-center">
+                        <img class="img-fluid mb-4" src="img/product-2.png" alt="">
+                        <h6 class="mb-3">Organic Vegetable</h6>
+                        <h5 class="text-primary mb-0">$19.00</h5>
+                        <div class="btn-action d-flex justify-content-center">
+                            <a class="btn bg-primary py-2 px-3" href=""><i class="bi bi-cart text-white"></i></a>
+                            <a class="btn bg-secondary py-2 px-3" href=""><i class="bi bi-eye text-white"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pb-5">
+                    <div class="product-item position-relative bg-white d-flex flex-column text-center">
+                        <img class="img-fluid mb-4" src="img/product-1.png" alt="">
+                        <h6 class="mb-3">Organic Vegetable</h6>
+                        <h5 class="text-primary mb-0">$19.00</h5>
+                        <div class="btn-action d-flex justify-content-center">
+                            <a class="btn bg-primary py-2 px-3" href=""><i class="bi bi-cart text-white"></i></a>
+                            <a class="btn bg-secondary py-2 px-3" href=""><i class="bi bi-eye text-white"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Products End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid bg-testimonial py-5 my-5">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="owl-carousel testimonial-carousel p-5">
+                        <div class="testimonial-item text-center text-white">
+                            <img class="img-fluid mx-auto p-2 border border-5 border-secondary rounded-circle mb-4" src="img/mn.jpg" alt="">
+                            <p class="fs-5">Dolores sed duo clita justo dolor et stet lorem kasd dolore lorem ipsum. At lorem lorem magna ut et, nonumy labore diam erat. Erat dolor rebum sit ipsum.</p>
+                            <hr class="mx-auto w-25">
+                            <h4 class="text-white mb-0">Naseer Khan </h4>
+                        </div>
+                        <div class="testimonial-item text-center text-white">
+                            <img class="img-fluid mx-auto p-2 border border-5 border-secondary rounded-circle mb-4" src="img/shshbaz.jpg" alt="">
+                            <p class="fs-5">Dolores sed duo clita justo dolor et stet lorem kasd dolore lorem ipsum. At lorem lorem magna ut et, nonumy labore diam erat. Erat dolor rebum sit ipsum.</p>
+                            <hr class="mx-auto w-25">
+                            <h4 class="text-white mb-0">Shahbaz Khan</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Team Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="mx-auto text-center mb-5" style="max-width: 500px;">
+                <h6 class="text-primary text-uppercase">The Team</h6>
+                <h1 class="display-5">We Are Professional Organic Farmers</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="row g-0">
+                        <div class="col-10">
+                            <div class="position-relative">
+                                <img class="img-fluid w-100" style="height: 400px;" src="img/arbaz.png" alt="">
+                                <!-- <div class="position-absolute start-0 bottom-0 w-100 py-3 px-4" style="background: rgba(52, 173, 84, .85);">
+                                    <h4 class="text-white">Farmer Name</h4>
+                                    <span class="text-white">Designation</span>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="h-100 d-flex flex-column align-items-center justify-content-around bg-secondary py-5">
+                                <a class="btn btn-square rounded-circle bg-white" href="#"><i class="fab fa-github   text-secondary"></i></a>
+                                <a class="btn btn-square rounded-circle bg-white" href="#"><i class="fab fa-facebook-f text-secondary"></i></a>
+                                <a class="btn btn-square rounded-circle bg-white" href="#"><i class="fab fa-linkedin-in text-secondary"></i></a>
+                                <a class="btn btn-square rounded-circle bg-white" href="#"><i class="fab fa-instagram text-secondary"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="row g-0">
+                        <div class="col-10">
+                            <div class="position-relative">
+                                <img class="img-fluid w-100" style="height: 400px;" src="img/age.jpg" alt="">
+                                <!-- <div class="position-absolute start-0 bottom-0 w-100 py-3 px-4" style="background: rgba(52, 173, 84, .85);">
+                                    <h4 class="text-white">Farmer Name</h4>
+                                    <span class="text-white">Designation</span>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="h-100 d-flex flex-column align-items-center justify-content-around bg-secondary py-5">
+                                <a class="btn btn-square rounded-circle bg-white" href="#"><i class="fab fa-github text-secondary"></i></a>
+                                <a class="btn btn-square rounded-circle bg-white" href="#"><i class="fab fa-facebook-f text-secondary"></i></a>
+                                <a class="btn btn-square rounded-circle bg-white" href="#"><i class="fab fa-linkedin-in text-secondary"></i></a>
+                                <a class="btn btn-square rounded-circle bg-white" href="#"><i class="fab fa-instagram text-secondary"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="row g-0">
+                        <div class="col-10">
+                            <div class="position-relative">
+                                <img class="img-fluid " style="height: 400px;" src="img/unaid.png" alt="">
+                                <!-- <div class="position-absolute start-0 bottom-0 w-100 py-3 px-4" style="background: rgba(52, 173, 84, .85);">
+                                    <h4 class="text-white">Farmer Name</h4>
+                                    <span class="text-white">Designation</span>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="h-100 d-flex flex-column align-items-center justify-content-around bg-secondary py-5">
+                                <a class="btn btn-square rounded-circle bg-white" href="#"><i class="fab fa-github text-secondary"></i></a>
+                                <a class="btn btn-square rounded-circle bg-white" href="#"><i class="fab fa-facebook-f text-secondary"></i></a>
+                                <a class="btn btn-square rounded-circle bg-white" href="#"><i class="fab fa-linkedin-in text-secondary"></i></a>
+                                <a class="btn btn-square rounded-circle bg-white" href="#"><i class="fab fa-instagram text-secondary"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Blog Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="mx-auto text-center mb-5" style="max-width: 500px;">
+                <h6 class="text-primary text-uppercase">Our Blog</h6>
+                <h1 class="display-5">Latest Articles From Our Blog Post</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="blog-item position-relative overflow-hidden">
+                        <img class="img-fluid" src="img/blog-1.jpg" alt="">
+                        <a class="blog-overlay" href="">
+                            <!-- <h4 class="text-white">Lorem elitr magna stet eirmod labore amet</h4>
+                            <span class="text-white fw-bold">Jan 01, 2050</span> -->
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-item position-relative overflow-hidden">
+                        <img class="img-fluid" src="img/blog-2.jpg" alt="">
+                        <a class="blog-overlay" href="">
+                            <!-- <h4 class="text-white">Lorem elitr magna stet eirmod labore amet</h4>
+                            <span class="text-white fw-bold">Jan 01, 2050</span> -->
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-item position-relative overflow-hidden">
+                        <img class="img-fluid" src="img/blog-3.jpg" alt="">
+                        <a class="blog-overlay" href="">
+                            <!-- <h4 class="text-white">Lorem elitr magna stet eirmod labore amet</h4>
+                            <span class="text-white fw-bold">Jan 01, 2050</span> -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+    
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-footer bg-primary text-white mt-5">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-8 col-md-6">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                            <h4 class="text-white mb-4">Get In Touch</h4>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-geo-alt text-white me-2"></i>
+                                <p class="text-white mb-0">Pakistan Karachi </p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-envelope-open text-white me-2"></i>
+                                <p class="text-white mb-0">unaidsaad@gmail.com</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-telephone text-white me-2"></i>
+                                <p class="text-white mb-0">+923481345257</p>
+                            </div>
+                            <div class="d-flex mt-4">
+                                <a class="btn btn-secondary btn-square rounded-circle me-2" href="#"><i class="fab fa-github"></i></a>
+                                <a class="btn btn-secondary btn-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-secondary btn-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-secondary btn-square rounded-circle" href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <h4 class="text-white mb-4">Quick Links</h4>
+                            <div class="d-flex flex-column justify-content-start">
+                                <a class="text-white mb-2" href="#"><i class="bi bi-arrow-right text-white me-2"></i>Home</a>
+                                <a class="text-white mb-2" href="#"><i class="bi bi-arrow-right text-white me-2"></i>About Us</a>
+                                <a class="text-white mb-2" href="#"><i class="bi bi-arrow-right text-white me-2"></i>Our Services</a>
+                                <a class="text-white" href="#"><i class="bi bi-arrow-right text-white me-2"></i>Contact Us</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <h4 class="text-white mb-4">Popular Links</h4>
+                            <div class="d-flex flex-column justify-content-start">
+                                <a class="text-white mb-2" href="#"><i class="bi bi-arrow-right text-white me-2"></i>Home</a>
+                                <a class="text-white mb-2" href="#"><i class="bi bi-arrow-right text-white me-2"></i>About Us</a>
+                                <a class="text-white mb-2" href="#"><i class="bi bi-arrow-right text-white me-2"></i>Our Services</a>
+                                <a class="text-white" href="#"><i class="bi bi-arrow-right text-white me-2"></i>Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-4 col-md-6 mt-lg-n5">
+                    <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-secondary p-5">
+                        <h4 class="text-white">Newsletter</h4>
+                        <h6 class="text-white">Subscribe Our Newsletter</h6>
+                        <p>Amet justo diam dolor rebum lorem sit stet sea justo kasd</p>
+                        <form action="https://formsubmit.arbazkn45257@gmail.com" method="POST">
+                            <div class="input-group">
+                                <input type="email" class="form-control border-white p-3" placeholder="Your Email">
+                                <button class="btn btn-primary">Sign Up</button>
+                            </div>
+                        </form>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; <a class="text-secondary fw-bold" href="#">Your Site Name</a>. All Rights Reserved. Designed by <a class="text-secondary fw-bold" href="">ARBAZ KHAN</a></p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <script type="text/javascript">
+        (function(d, m){
+            var kommunicateSettings = 
+                {"appId":"1edbb0122c7dc89c7a598a7b6b2dbe628","popupWidget":true,"automaticChatOpenOnNavigation":true};
+            var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+            s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+            var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+            window.kommunicate = m; m._globals = kommunicateSettings;
+        })(document, window.kommunicate || {});
+    /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+    </script>
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+</html>
